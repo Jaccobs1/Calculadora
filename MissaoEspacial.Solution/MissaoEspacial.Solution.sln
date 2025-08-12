@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissaoEspacial", "MissaoEspacial\MissaoEspacial.csproj", "{82D11D28-6656-4DCB-8E00-2207413FCED4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82D11D28-6656-4DCB-8E00-2207413FCED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D11D28-6656-4DCB-8E00-2207413FCED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D11D28-6656-4DCB-8E00-2207413FCED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D11D28-6656-4DCB-8E00-2207413FCED4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2611391E-155B-4C98-8DFE-6FAEB16C5067}
+	EndGlobalSection
+EndGlobal
