@@ -49,7 +49,16 @@ do
         case "2":
             break;
         case "3":
-           break;
+            Console.Write("1º número: ");
+            double.TryParse(Console.ReadLine(), out double fator1);
+            Console.Write("2º número: ");
+            double.TryParse(Console.ReadLine(), out double fator2);
+
+            double resultadoMultiplicacao = Multiplicacao.Multiplicar(fator1, fator2);
+
+            Console.WriteLine($"\nResultado: {resultadoMultiplicacao}");
+            Console.ReadKey();
+            break;
         case "4":
             break;
     }
