@@ -8,18 +8,9 @@ namespace Calculadora.Operações
 {
     internal class Multiplicacao
     {
-        public double N1;
-        public double N2;
-
-        public Multiplicacao(double primeiroNumero, double segundoNumero)
+        public static double Multiplicar(double n1, double n2)
         {
-            N1 = primeiroNumero;
-            N2 = segundoNumero;
+            return n1 * n2;
         }
-        public void Multiplicar()
-        {
-            double resultadoMultiplicacao = N1 * N2;
-        }
-
     }
 }
