@@ -14,6 +14,7 @@ namespace Calculadora.Utils
             Console.WriteLine("Opção inválida!!!");
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.ReadKey();
+            Console.Clear();
         }
     }
 }
