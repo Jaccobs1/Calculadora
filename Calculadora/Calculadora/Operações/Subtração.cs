@@ -10,3 +10,4 @@ namespace Calculadora.Operações
     {
     }
 }
+
