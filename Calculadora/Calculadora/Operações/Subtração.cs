@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Calculadora.Operações
 {
-    internal class Subtração
+    internal class Subtracao
     {
+        public double Subtrair(double n1, double n2)
+        {
+            return n1 - n2;
+        }
     }
 }
 
