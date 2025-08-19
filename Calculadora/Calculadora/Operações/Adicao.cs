@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculadora.Operações
 {
-    public class Adicao
+    internal class Adicao
     {
         public static double Somar(double n1, double n2)
         {

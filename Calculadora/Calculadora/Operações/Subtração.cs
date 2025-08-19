@@ -8,7 +8,7 @@ namespace Calculadora.Operações
 {
     internal class Subtracao
     {
-        public double Subtrair(double n1, double n2)
+        public static double Subtrair(double n1, double n2)
         {
             return n1 - n2;
         }
