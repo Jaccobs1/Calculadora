@@ -63,3 +63,5 @@ do
             break;
     }
 } while (!sair);
+
+ConsoleUtils.MensagemSaida();
