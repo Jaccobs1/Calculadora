@@ -2,12 +2,14 @@
 using Calculadora.Utils;
 
 string opcao = "";
+double n1, n2,resultado;
 bool sair = false;
+string[] opcoesPossiveis = {"0", "1", "2", "3", "4", "5"};
 
 do
 {
-    do
-    {
+    //do
+    //{
         Console.Clear();
 
         Console.WriteLine("CALCULADORA\n");
@@ -16,17 +18,18 @@ do
         Console.WriteLine("2 - Subtração");
         Console.WriteLine("3 - Multiplicação");
         Console.WriteLine("4 - Divisão");
+        Console.WriteLine("5 - Radiciação");
         Console.WriteLine("0 - SAIR\n");
 
         Console.Write("Opção: ");
         opcao = Console.ReadLine();
 
-        if (opcao != "0" && opcao != "1" && opcao != "2" && opcao != "3" && opcao != "4")
-        {
-            ConsoleUtils.MensagemErro();
-        }
+     //if (!(opcoesPossiveis.Contains(opcao)));
+    //{
+    //    ConsoleUtils.MensagemErro();
+    //}
 
-    } while (opcao != "1" && opcao != "2" && opcao != "3" && opcao != "4" && opcao != "0");
+    //} while (!opcoesPossiveis.Contains(opcao));
 
     Console.Clear();
 
@@ -37,11 +40,11 @@ do
             break;
         case "1":
             Console.Write("1º número: ");
-            double.TryParse(Console.ReadLine(), out double n1);
+            double.TryParse(Console.ReadLine(), out n1);
             Console.Write("2º número: ");
-            double.TryParse(Console.ReadLine(), out double n2);
+            double.TryParse(Console.ReadLine(), out n2);
 
-            double resultado = Adicao.Somar(n1, n2);
+            resultado = Adicao.Somar(n1, n2);
 
             Console.WriteLine($"\nResultado: {resultado}");
             Console.ReadKey();
@@ -50,16 +53,39 @@ do
             break;
         case "3":
             Console.Write("1º número: ");
-            double.TryParse(Console.ReadLine(), out double fator1);
+            double.TryParse(Console.ReadLine(), out n1);
             Console.Write("2º número: ");
-            double.TryParse(Console.ReadLine(), out double fator2);
+            double.TryParse(Console.ReadLine(), out  n2);
 
-            double resultadoMultiplicacao = Multiplicacao.Multiplicar(fator1, fator2);
+            resultado = Multiplicacao.Multiplicar(n1, n2);
 
-            Console.WriteLine($"\nResultado: {resultadoMultiplicacao}");
+            Console.WriteLine($"\nResultado: {resultado}");
             Console.ReadKey();
             break;
         case "4":
+            Console.Write("1º número: ");
+            double.TryParse(Console.ReadLine(), out n1);
+            Console.Write("2º número: ");
+            double.TryParse(Console.ReadLine(), out n2);
+
+            resultado = Divisao.Dividir(n1,n2);
+
+            Console.WriteLine($"\nResultado: {resultado}");
+            Console.ReadKey();
+            break;
+        case "5":
+            Console.Write("Insira o radicando: ");
+            double.TryParse(Console.ReadLine(), out n1);
+            Console.Write("Insira o índice (ex: 2 para raíz quadrada): ");
+            double.TryParse(Console.ReadLine(), out n2);
+
+            resultado = Raiz.Radiciacao(n1, n2);
+
+            Console.WriteLine($"\nResultado: {resultado}");
+            Console.ReadKey();
+            break;
+        default:
+            ConsoleUtils.MensagemErro();
             break;
     }
 } while (!sair);

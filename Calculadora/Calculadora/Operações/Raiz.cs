@@ -9,7 +9,7 @@ namespace Calculadora.Operações
 {
     internal class Raiz
     {
-        static public double Radiciacao(double radicando, double indice = 2)
+        public static double Radiciacao(double radicando, double indice = 2)
         {
             //Inserir indíce=2 para raíz quadrada, 3 para raíz cúbica, etc.
             //Realiza raíz quadrada caso um indíce não seja mencionado.

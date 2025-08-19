@@ -8,7 +8,7 @@ namespace Calculadora.Operações
 {
     internal class Divisao
     {
-        public double Dividir(double n1, double n2)
+        public static double Dividir(double n1, double n2)
         {
             return n1 / n2;
         }
