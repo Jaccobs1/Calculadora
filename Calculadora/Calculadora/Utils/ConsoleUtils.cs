@@ -16,5 +16,19 @@ namespace Calculadora.Utils
             Console.ReadKey();
             Console.Clear();
         }
+
+        public static void MensagemSaida()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("SAINDO");
+            Thread.Sleep(250);
+            Console.Write("*");
+            Thread.Sleep(250);
+            Console.Write("*");
+            Thread.Sleep(250);
+            Console.Write("*");
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
     }
 }
