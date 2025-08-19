@@ -66,9 +66,15 @@ do
             Console.Write("2º número: ");
             double.TryParse(Console.ReadLine(), out n2);
 
-            resultado = Divisao.Dividir(n1,n2);
-
-            Console.WriteLine($"\nResultado: {resultado}");
+            if (n2 == 0)
+            {
+                Console.WriteLine("\nErro: Nao é possivel dividir por zero.");
+            }
+            else
+            {
+                resultado = Divisao.Dividir(n1, n2);
+                Console.WriteLine($"\nResultado: {resultado}");
+            }
             Console.ReadKey();
             break;
         case "5":

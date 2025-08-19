@@ -10,18 +10,11 @@ namespace Calculadora.Operações
     {
         public static double Dividir(double n1, double n2)
         {
-            try
+           if (n2 == 0)
             {
-                //Tentativa de executar a divisão
-                //Se o numero 2 for zero, uma exceção vai ser lançada
-                return n1 / n2;
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Erro: Divisão por zero não é permitida.");
-
                 return double.NaN;
             }
+           return n1 / n2;
         }
     }
 }
