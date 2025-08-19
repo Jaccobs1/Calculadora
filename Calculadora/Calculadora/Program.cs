@@ -4,14 +4,10 @@ using Calculadora.Utils;
 string opcao = "";
 double n1, n2,resultado;
 bool sair = false;
-string[] opcoesPossiveis = {"0", "1", "2", "3", "4", "5"};
 
 do
 {
-    //do
-    //{
         Console.Clear();
-
         Console.WriteLine("CALCULADORA\n");
 
         Console.WriteLine("1 - Adição");
@@ -23,13 +19,6 @@ do
 
         Console.Write("Opção: ");
         opcao = Console.ReadLine();
-
-     //if (!(opcoesPossiveis.Contains(opcao)));
-    //{
-    //    ConsoleUtils.MensagemErro();
-    //}
-
-    //} while (!opcoesPossiveis.Contains(opcao));
 
     Console.Clear();
 
