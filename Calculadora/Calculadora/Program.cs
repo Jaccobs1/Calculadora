@@ -50,6 +50,15 @@ do
             Console.ReadKey();
             break;
         case "2":
+            Console.Write("1º número: ");
+            double.TryParse(Console.ReadLine(), out n1);
+            Console.Write("2º número: ");
+            double.TryParse(Console.ReadLine(), out n2);
+
+            resultado = Subtracao.Subtrair(n1, n2);
+
+            Console.WriteLine($"\nResultado: {resultado}");
+            Console.ReadKey();
             break;
         case "3":
             Console.Write("1º número: ");
